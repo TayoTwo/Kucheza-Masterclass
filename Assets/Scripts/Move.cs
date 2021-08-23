@@ -12,12 +12,12 @@ public class Move : MonoBehaviour
     //Direction the player is to move
     public Vector2 moveDirection;
     //Rigidbodies handle physics for us
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start(){
 
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         
     }
 
@@ -28,10 +28,10 @@ public class Move : MonoBehaviour
         inputX = Input.GetAxis("Horizontal");
 
         //We combine the direction the player wants to move with the speed, rigibody.velocity.y is the player's fall speed
-        moveDirection = new Vector2(moveSpeed * inputX,rigidbody2D.velocity.y);
+        moveDirection = new Vector2(moveSpeed * inputX,rb.velocity.y);
 
         //Set our player's velocity
-        rigidbody2D.velocity = moveDirection;
+        rb.velocity = moveDirection;
         
     }
 }
