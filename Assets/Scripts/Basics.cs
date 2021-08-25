@@ -78,4 +78,10 @@ public class Basics : MonoBehaviour
 
     }
 
+    float sqr(float x){
+
+        return Mathf.Sqrt(x);
+
+    }
+
 }
