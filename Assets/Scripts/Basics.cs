@@ -7,9 +7,8 @@ public class Basics : MonoBehaviour
 
     //Boolean
     public bool checkboxFilled;
-    //Integer
+    //Integers
     public int option;
-
     public int x;
     public int y;
     //Float i.e a decimal number with a certain number of poitns afterwards
@@ -30,28 +29,27 @@ public class Basics : MonoBehaviour
 
         switch(option){
 
-            case 0:
+            case 1:
 
                 Debug.Log("Case 0");
                 break;
 
-            case 1:
+            case 2:
 
                 Debug.Log("Case 1");
                 break;
 
-            case 2:
+            case 3:
 
-                Debug.Log("But also case 2!");
+                Debug.Log("Case 2!");
                 break;
 
             default:
 
-                Debug.Log("Didn't select ");
+                Debug.Log("Not case 1,2,3 ");
                 break;
 
         }
-
 
     }
 
@@ -81,9 +79,9 @@ public class Basics : MonoBehaviour
 
     }
 
-    float sqr(float x){
+    float half(float n){
 
-        return Mathf.Sqrt(x);
+        return n / 2f;
 
     }
 
