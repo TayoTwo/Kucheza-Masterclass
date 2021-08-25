@@ -6,11 +6,14 @@ public class Basics : MonoBehaviour
 {
 
     //Boolean
-    bool checkboxFilled;
+    public bool checkboxFilled;
     //Integer
-    int option;
-    //Float i.e a decimal number with a certain number of poitns afterwards
+    public int option;
 
+    public int x;
+    public int y;
+    //Float i.e a decimal number with a certain number of poitns afterwards
+    public float z;
 
     // Start is called before the first frame update
     void Start(){
